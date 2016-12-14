@@ -16,6 +16,11 @@ body {
     opacity: 1;
 }
 
+/* Customm content container */
+#content {
+   max-width: 300px;
+}
+
 /* Custom hr tags*/
 hr {
     border-top: 1px solid #ccc;
@@ -34,6 +39,20 @@ hr.hr-year {
 h3.h3-year {
     margin-bottom: 0;
     text-align: center;
+}
+
+/* Custom alert */
+.alert-gray {
+  color: #333;
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 10px 10px;
 }
 
 /* Social media links and stacked fa icons */
