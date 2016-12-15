@@ -174,10 +174,16 @@ h3.h3-year {
     transform: rotate3d(45, 45, 0, 180deg);
     background-color: #fff;
 }
+.circle-container-lg .outer-ring {
+  top: -11px;
+  left: -11px;
+}
+.circle-container-sm .outer-ring {
+  top: -10px;
+  left: -10px;
+}
 .outer-ring {
     position: absolute;
-    top: -10px;
-    left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
     background-color: rgba(255, 255, 255, 0);
