@@ -7,15 +7,6 @@ body {
     font-family: ubuntu;
 }
 
-/* Fade in JS */
-.fadein {
-    opacity: 0;
-    transition: .8s opacity;
-}
-.fadein.visible {
-    opacity: 1;
-}
-
 /* Custom content container */
 #content {
    margin-top: 20px;
@@ -65,11 +56,10 @@ h3.h3-year {
 
 .fa-stack {
     width: 1.5em;
-    -webkit-transition: all .2s ease-in-out;
 }
+
 .fa-stack:hover {
     cursor: pointer;
-    -webkit-transition: all .2s ease-in-out;
     color: #337ab7;
 }
 
@@ -90,20 +80,14 @@ h3.h3-year {
     background-image: url('../img/portfolio.png');
 }
 
+.safe-link {
+    font-size: 18px;
+}
 /* Coins // much credit due for https://codepen.io/nordstromdesign/ */
 .circle-container {
     position: relative;
     perspective: 1000;
     margin: 20px auto;
-}
-.circle-container:hover .circle {
-    transform: rotate3d(45, 45, 0, 180deg);
-}
-.circle-container:hover .outer-ring {
-    transform: rotate3d(45, 0, 0, 180deg);
-}
-.circle-container:hover .outer-outer-ring {
-    transform: rotate3d(0, 45, 0, 180deg);
 }
 .circle-container, .front, .back {
     background-color: rgba(0, 0, 0, 0);
@@ -123,11 +107,6 @@ h3.h3-year {
 .circle-sm .front, .circle-sm .back {
     bottom: 5px;
     right: 5px;
-}
-.circle, .outer-ring, .outer-outer-ring {
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 .circle {
     position: relative;
@@ -152,23 +131,6 @@ h3.h3-year {
 }
 .circle-sm .back-text {
     line-height: 1.0;
-}
-.back-text hr {
-    width: 40px;
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
-}
-.back-text a {
-    color: #333;
-    font-size: 12px;
-}
-.back-text a:hover {
-    color: #337ab7;
-    text-decoration: none;
-}
-.back {
-    transform: rotate3d(45, 45, 0, 180deg);
-    background-color: #fff;
 }
 .circle-container-lg .outer-ring {
   top: -11px;
